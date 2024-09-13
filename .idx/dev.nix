@@ -10,6 +10,7 @@
     pkgs.maven
     pkgs.ant
     pkgs.protobuf
+    pkgs.google-java-format
   ];
 
   # Sets environment variables in the workspace
@@ -19,6 +20,7 @@
     extensions = [
       "vscjava.vscode-java-pack"
       "eamodio.gitlens"
+      "ilkka.google-java-format"
     ];
 
     # Workspace lifecycle hooks
