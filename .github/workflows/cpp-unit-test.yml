@@ -31,6 +31,10 @@ jobs:
         cmake ..
         make
     
+    - name: Test C++ Build Tools
+      run: |
+        ./cpp/build/tools/generate_geocoding_data_test
+    
     - name: Test C++ API
       run: |
         ./cpp/build/libphonenumber_test
